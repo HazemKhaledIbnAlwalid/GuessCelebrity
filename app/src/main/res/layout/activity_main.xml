@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.android.guesscelebrity.MainActivity">
+
+
+    <TextView
+        android:id="@+id/ScoreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="156dp"
+        android:text="0/0"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/CelebrityImage"
+        android:layout_width="382dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.89" />
+
+    <Button
+        android:id="@+id/FirstChoicebutton"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:onClick="ChosenButtonPressed"
+        android:tag="0"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/SecondChoicebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:onClick="ChosenButtonPressed"
+        android:tag="1"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/ThirdChoicebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:onClick="ChosenButtonPressed"
+        android:tag="2"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/FourthChoicebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ChosenButtonPressed"
+        android:tag="3"
+        android:text="Button" />
+</LinearLayout>
